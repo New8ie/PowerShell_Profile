@@ -29,7 +29,7 @@ function Update-Profile {
     } catch {
         Write-Error "Unable to check for `$profile updates"
     } finally {
-        Remove-Item "$env:temp/profile_pwsh7.ps1" -ErrorAction SilentlyContinue
+        Remove-Item "$env:temp/Microsoft.PowerShell_profile.ps1" -ErrorAction SilentlyContinue
     }
 }
 
